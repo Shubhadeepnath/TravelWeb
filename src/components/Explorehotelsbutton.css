@@ -1,0 +1,37 @@
+.explorehotels {
+  
+  
+  padding-left: 75%;
+  justify-content: center;
+}
+
+.explore-links{
+  color: black;
+}
+
+.btnclass4:hover{
+  background-color: white !important ;
+  
+  font-size:large;
+}
+
+@media screen and (max-width: 850px) {
+  /*.btnclass4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }  */
+
+  .explorehotels{
+    margin: 2rem 6rem;
+  }
+
+  .btnclass4 {
+    /* Adjust font size as needed */
+
+    display: flex;
+    float: right;
+    justify-content: center;
+    align-items: center;
+  }
+}

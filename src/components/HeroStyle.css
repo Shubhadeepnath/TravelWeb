@@ -1,0 +1,116 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.hero-mid {
+  width: 100%;
+  height: 90vh;
+  position: relative;
+}
+
+.hero-mid h1 {
+  padding-top: 4rem !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.heroText {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.heroText h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  background: #fff;
+
+  /* -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+  font-size: bold;
+}
+
+.heroText p {
+  color: #fff;
+
+  font-size: 1.5rem;
+  padding: 5.5rem 0 2rem 0;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.heroText h2 {
+  font-weight: bold;
+  font-size: 1.3rem;
+
+  color: #fff;
+  padding: 5.7rem 5rem;
+}
+
+.heroText .show {
+  text-decoration: none;
+  background: none;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+  font-size: 1.3rem;
+
+  letter-spacing: 2px;
+  color: white;
+}
+.heroText .show:hover {
+  background-color: none;
+  font-weight: bold;
+  border-radius: 6px;
+  box-shadow: 0 0 10px 0 rgba(58, 66, 67, 0.61);
+}
+
+.heroText .hide {
+  display: none;
+}
+
+@media screen and (max-width: 555px) {
+  .heroText h1 {
+    padding: 10px 20px;
+  }
+
+  .heroText h2 {
+    font-size: 1.1rem;
+    padding: 0 0 2rem 0;
+  }
+
+  .heroText .show {
+    padding: 0.6rem 1.1rem;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+}

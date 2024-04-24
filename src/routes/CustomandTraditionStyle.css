@@ -1,0 +1,96 @@
+.firstCustom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.5rem;
+}
+
+.firstCustom-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10rem;
+}
+.customText {
+  width: 45%;
+  text-align: start;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.customText h2 {
+  padding-bottom: 1rem;
+}
+
+.customText:hover {
+  color: #ff6b6b;
+  background-color: #f0f0f0;
+  opacity: 0.9;
+}
+
+.customimage {
+  position: relative;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.customimage img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 7px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.customimage:hover img {
+  transform: scale(1.1);
+}
+
+.customimage:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.customlink {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 850px) {
+  .firstCustom {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+
+  .firstCustom-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 4.5rem;
+  }
+  .customText {
+    width: 100%;
+  }
+
+  .customimage {
+    width: 100%;
+    margin: 1.8rem 0;
+  }
+
+  .customimage img {
+    height: 250px;
+  }
+}

@@ -1,0 +1,78 @@
+.form-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: #f3f4f6;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+}
+
+/*.button {
+  
+  border: none;
+  color: white;
+  padding: 0.5rem 6.5rem
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 0 ;
+  font-size: 16px;
+  border-radius: 8px;
+}*/
+
+.input-box {
+  margin-bottom: 20px;
+  /*justify-content: center;*/
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.bx {
+  margin-right: 10px;
+}
+
+.two-col {
+  display: block;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.one {
+  flex: 1;
+}
+
+.two {
+  flex: 1;
+  text-align: right;
+}
+
+label {
+  font-size: 14px;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 850px) {
+  .btn2 {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+}
