@@ -21,7 +21,7 @@ function Navbar() {
     <>
       <nav className="NavbarItems">
         <h1 className="navbar-logo">
-          <i className="fa-solid fa-mountain-city"></i>TripuraQuest
+          <i className="fa-solid fa-mountain-city"></i>WonderfulTripura
         </h1>
         <div className="menu-icons" onClick={handleClick}>
           <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
